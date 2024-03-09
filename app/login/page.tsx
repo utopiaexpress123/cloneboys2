@@ -23,7 +23,7 @@ export default async function Login() {
 
 <Tabs defaultValue="account" className="w-[400px] transition-all">
   <TabsList className="w-full bg-transparent">
-    <TabsTrigger value="account" className="text-start shadow-lg">Female Version</TabsTrigger>
+    <TabsTrigger value="account" className="text-start shadow-lg">Male Version</TabsTrigger>
     <Link href="" className="text-sm text-gray-500 ml-4">
       <p>Go to Male Version</p>
       </Link>
