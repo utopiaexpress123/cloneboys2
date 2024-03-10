@@ -47,7 +47,12 @@ export default async function Navbar() {
       </div>
       {user && (
         <div className="hidden lg:flex flex-row gap-2">
-
+          <Link href="/overview">
+            Your Clones
+          </Link>
+          <Link href="/overview/models/train">
+            Start a Training
+          </Link>
           {stripeIsConfigured && (
             <Link href="/get-credits">
               <Button variant={"ghost"}>Get Credits</Button>
