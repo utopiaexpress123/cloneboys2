@@ -201,7 +201,7 @@ export default function TrainModelZone() {
           onSubmit={form.handleSubmit(onSubmit)}
           className="rounded-md flex flex-col gap-8 relative shadow-none"
         >
-            <div className="mx-auto md:w-1/2">
+            <div className="mx-auto md:w-1/2 py-10">
               <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-600">
                 <Link href="/overview" className="text-sm w-fit">
                   <Button variant={"link"}>
