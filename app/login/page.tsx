@@ -16,7 +16,7 @@ export const dynamic = "force-dynamic";
 
 export default async function Login() {
   return (
-    <div className="flex-1 flex flex-col w-full py-6 sm:max-w-md justify-center gap-2">
+    <div className="flex-1 flex flex-col w-full py-12 sm:max-w-md justify-center gap-2">
 
 
 <Tabs defaultValue="account" className="w-[400px] transition-all">
