@@ -10,9 +10,10 @@ export async function POST(request: Request) {
   const email = String(formData.get('email'))
   const supabase = createRouteHandlerClient({ cookies })
 
-  const { error } = await supabase.auth.signInWithOtp({
-    email,
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google'
   })
+ 
 
   if (error) {
     return NextResponse.redirect(
