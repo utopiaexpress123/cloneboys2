@@ -11,12 +11,8 @@ export async function POST(request: Request) {
   const password = String(formData.get('password'))
   const supabase = createRouteHandlerClient({ cookies })
 
-  const { error } = await supabase.auth.signUp({
-    email,
-    password,
-    options: {
-      emailRedirectTo: `${requestUrl.origin}/auth/callback`,
-    },
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google'
   })
 
   if (error) {
